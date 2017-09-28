@@ -10,13 +10,71 @@
 <head>
     <meta charset="UTF-8">
     <title></title>
-    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+<nav>
+    <span class="sign-up">Sign Up</span>
+    <span class="log-in">Log In</span>
+    <span class="log-out">Log Out</span>
+</nav>
+<div id="sign-up">
+    <div class="progress-bar">
+        <div class="progress" id="sign-up-progress"></div>
+    </div>
+    <div class="page" id="page1">
+        <div>
+            <input class="f-name" placeholder="First Name"/>
+            <div class="error f-name-error"></div>
+            <input class="l-name" placeholder="Last Name"/>
+            <div class="error l-name-error"></div>
+        </div>
+        <input class="email" placeholder="Email"/>
+        <div class="error email-error"></div>
+        <input class="password" placeholder="Password"/>
+        <div class="error password-error"></div>
+        <input class="confirm" placeholder="Confirm Password"/>
+        <div class="error confirm-error"></div>
+        <div>
+            <button class="cancel">Cancel</button>
+            <button class="next">Next <span class="fa fa-arrow-circle-right"></span></button>
+        </div>
+    </div>
+
+    <div class="page" id="page2">
+        <input class="image" placeholder="Image of yourself"/>
+        <div class="error image-error"></div>
+        <input class="company" placeholder="Employer Company Name"/>
+        <div class="error company-error"></div>
+        <input class="phone" placeholder="Phone Number"/>
+        <div class="error phone-error"></div>
+        <textarea class="bio" placeholder="Tell us a bit about yourself"></textarea>
+        <div class="error bio-error"></div>
+        <div>
+            <button class="back"><span class="fa fa-arrow-circle-left"></span> Back</button>
+            <button class="next">Next <span class="fa fa-arrow-circle-right"></span></button>
+        </div>
+    </div>
+
+    <div class="page" id="page3">
+        <input class="git-hub" placeholder="URL to GitHub Profile"/>
+        <div class="error git-hub-error"></div>
+        <input class="linked-in" placeholder="URL to LinkedIn Profile"/>
+        <div class="error linked-in-error"></div>
+        <input class="twitter" placeholder="URL to Twitter Profile"/>
+        <div class="error twitter-error"></div>
+        <div>
+            <button class="back"><span class="fa fa-arrow-circle-left"></span> Back</button>
+            <button class="submit">Submit</button>
+        </div>
+    </div>
+</div>
 
 
-
-
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/toastr/toastr.js"></script>
+<script src="node_modules/moment/min/moment.min.js"></script>
 <script src="js/service.js"></script>
 <script src="js/custom_functions.js"></script>
 <script src="js/main.js"></script>

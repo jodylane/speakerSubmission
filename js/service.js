@@ -40,9 +40,8 @@ var Service = (function () {
             }
         ]
     };
-    debugger;
     var object = Object.assign({}, user1, user2, user3);
-    console.log(object);
+
     var addUser = function (fName, lName, email, password) {
 
     };
